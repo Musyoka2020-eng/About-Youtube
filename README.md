@@ -1,7 +1,7 @@
 # About Youtube
  - This site Briefly talk about youtube and its features
 
- #Cretor 
+ #Creator 
  
  This Site was created by Steve Musyoka
  
