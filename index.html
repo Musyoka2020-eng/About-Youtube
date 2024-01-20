@@ -3,9 +3,9 @@
 
 <head>
     <!-- 
-        Hello developer this page was created by Steve Musyoka
-        All the information use was retrieved from google.com
-        All sections are nested in a main tag
+        Hello developer, this page was created by Steve Musyoka.
+        All the information used was retrieved from google.com.
+        All sections are nested in a main tag.
     -->
 
     <!-- Meta tags for character set and viewport -->
@@ -19,15 +19,15 @@
     <!-- Internal CSS styles -->
     <style>
         /*
-        This is the page styling it is the one resposible for the nice user interface
-        it include stying for 
-        1.body
-        2.header
-        3.main
-        4.section
-        5.headers
-        6.footer
-        some other tags in the page icluding p, ul, li, dt, dl, dd
+        This is the page styling responsible for the nice user interface.
+        It includes styling for 
+        1. body
+        2. header
+        3. main
+        4. section
+        5. headers
+        6. footer
+        and some other tags in the page including p, ul, li, dt, dl, dd
         */
         body {
             font-family: 'Arial', sans-serif;
@@ -44,30 +44,47 @@
             margin-bottom: 20px;
         }
 
+        nav {
+            margin-bottom: 20px;
+            background-color: #a4a4a454;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #040e25;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
         main {
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .table-of-contents {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #FFFFFF;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .table-of-contents ol {
-            padding: 3px, 10px;
-        }
-
-        .table-of-contents li {
-            margin-bottom: 5px;
-        }
-
         section {
             margin-top: 20px;
-            background-color: #FFFFFF;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -86,12 +103,9 @@
             background-color: lightgreen;
         }
 
-        #youtube-image {
-            background-color: lightblue;
-        }
-
+        #youtube-image,
         #definitions {
-            background-color: lightseagreen;
+            background-color: lightblue;
         }
 
         h2 {
@@ -155,20 +169,19 @@
         <p>Your go-to platform for videos and more!</p>
     </header>
 
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#youtube-image">YouTube Logo</a></li>
+            <li><a href="#definitions">Definitions</a></li>
+        </ul>
+    </nav>
+
     <!-- Main Content Section -->
     <main>
-
-        <!-- Table of Contents Section -->
-        <div class="table-of-contents">
-            <h2>Table of Contents</h2>
-            <ol>
-                <li><a href="#introduction">Introduction to YouTube</a></li>
-                <li><a href="#features">Key Features of YouTube</a></li>
-                <li><a href="#getting-started">Getting Started with YouTube</a></li>
-                <li><a href="#youtube-image">YouTube Logo Image</a></li>
-                <li><a href="#definitions">YouTube Definitions</a></li>
-            </ol>
-        </div>
 
         <!-- Introduction Section -->
         <section id="introduction">
@@ -184,7 +197,7 @@
         <!-- Features Section -->
         <section id="features">
             <h2>Key Features of YouTube</h2>
-            <ul>
+            <ol>
                 <li><strong>Video Upload:</strong> Easily upload your own videos to share with the world.</li>
                 <li><strong>Discover Content:</strong> Explore a vast array of content, from music and tutorials to
                     vlogs and documentaries.</li>
@@ -194,7 +207,7 @@
                 <li><strong>Live Streaming:</strong> Engage with your audience in real-time through live streaming.</li>
                 <li><strong>Community Interaction:</strong> Like, comment, and share videos, and connect with other
                     users.</li>
-            </ul>
+            </ol>
         </section>
 
         <!-- Getting Started Section -->
