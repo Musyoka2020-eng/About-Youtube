@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 5px;
+            background-color: #FF0000;
+            color: #FFFFFF;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .seminar_signup {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        .back_home {
+            /* display: block; */
+            background-color: dodgerblue;
+            padding: 10px;
+            width: 105px;
+            margin: 0 0 0 auto;
+            border-radius: 4px;
+            color: black;
+        }
+
+        .back_home:hover {
+            background-color: #45a049;
+        }
+
+        .seminar_signup a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .seminar_signup h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .seminar_signup p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label[for="username"],
+        label[for="email"] {
+            display: block;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            width: 95%;
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #FF0000;
+            color: #FFFFFF;
+            border-radius: 10px;
+        }
+
+        footer a {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Explore YouTube</h1>
+        <p>Your go-to platform for videos and more!</p>
+    </header>
+    <main>
+        <section class="seminar_signup">
+            <div class="back_home">
+                <a href="index.html" class="cta-button">Back to Home</a>
+            </div>
+            <h1>Sign Up for Youtube Intro Seminar</h1>
+            <p>Fill out the form below to sign up for our Youtube Intro Seminar.</p>
+            <form>
+                <fieldset>
+                    <legend>User Information</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests</legend>
+
+                    <label>
+                        <input type="checkbox" id="interest1" name="interests" value="music">
+                        Music
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="interest2" name="interests" value="movies">
+                        Movies
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="interest3" name="interests" value="sports">
+                        Sports
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <label for="male"> Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Date and Time</legend>
+
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Favorite Meeting Time</legend>
+
+                    <label for="meeting-time">Select a time:</label>
+                    <input type="time" id="meeting-time" name="meeting-time" required>
+
+                </fieldset>
+
+                <input type="submit" value="Sign Up">
+            </form>
+        </section>
+
+        <section>
+            <h2>Seminar Location</h2>
+            <p>Our seminar will be held at the following location:</p>
+            <div style="display: flex; justify-content: center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255291.17566440167!2d36.86302605818481!3d-1.2127330091420907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1706363269992!5m2!1sen!2ske" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explore YouTube | All rights reserved | Designed by <a href="https://github.com/Musyoka2020-eng"
+            target="_blank">Steve Atkins</a></p>
+    </footer>
+</body>
+
+</html>
