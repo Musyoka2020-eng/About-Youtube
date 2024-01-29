@@ -6,7 +6,7 @@ Welcome to the Explore YouTube project! This project provides a simple HTML page
 - [Introduction](#introduction)
 - [Key Features of YouTube](#features)
 - [Getting Started](#getting-started)
-- [YouTube Logo Image](#youtube-image)
+- [YouTube Media](#youtube-media)
 - [YouTube Definitions](#definitions)
 
 ## Introduction
@@ -18,7 +18,8 @@ Explore the key features that make YouTube an essential platform for content cre
 ## Getting Started
 Find out how to get started with YouTube. Discover the official website, sign in with your Google account, or create one if needed. Once logged in, you can begin exploring and enjoying the vast world of videos available on the platform.
 
-## YouTube Logo Image
+
+## YouTube Media
 Get a visual representation of the YouTube brand with an image of the official logo. The iconic red play button is a symbol recognized worldwide.
 
 ## YouTube Definitions
